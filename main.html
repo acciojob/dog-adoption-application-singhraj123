@@ -8,20 +8,38 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
-		<h4>Name</h4>
-		<input type="name"  type="text" id="name" placeholder="Name" >
-		<input type="Phone number" id="Phone number" type="text" placeholder="Phone number" >
-	    <input type="Address" type="text" placeholder="Address" >
-		<input type="checkbox" type="checkbox" placeholder="">
-		<textarear>VAlue should be:Have you ever lived with a Dog before?</textarear>
-		<Select multiple>
-			<options>one</options>
-			<options>two</options>
-			<options>three</options>
+	<form action="#" method="post">
+		<div>
+			<label for="name">Name</label>
+			<input id="name" name="name" placeholder="name" type="text" required>
 			
-		</Select>
-		<input type="submit" type="submit" Value="Submit">
+		</div>
+
+		<div>
+			<label for="phone">Phone Number</label>
+			<input id="phone" name="phone" type="text" placeholder="phone" required>
+		</div>
+		<div>
+			<label for="address">Address</label>
+			<input id="address" name="address" type="text" placeholder="address" required>
+			
+		</div>
+		<div>
+			
+			<input id="livedwithDog" name="LivedwithDog" type="checkbox" value="have you ever lived with a dog before?">
+			<label for="livedwithDog" >LivedwithDog</label>
+		</div>
+		<div>
+			<label for="preferredbreed">PreferredBreed</label>
+			<select id="preferredbreed" name="preferredbreeds" multiplesize="3">
+				<option value="labrador">labrador</option>
+				<option value="Beagle">Beagle</option>
+				<option value="Germansheperd">Germanshepherd</option>
+
+			</select>
+		</div>
+		
+			
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
